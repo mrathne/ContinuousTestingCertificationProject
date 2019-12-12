@@ -15,7 +15,7 @@ public class VerifyFlightBooking {
   
   @BeforeMethod
   public void launch(){
-	  	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	  	System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox"); //Bypass OS security model   
 		options.addArguments("--start-maximized");
