@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
-  <test name="Test">
-    <classes>
-    <class name="Test.VerifyRegistration"/>
-    <class name="Test.VerifyFlightBooking"/>
-    <class name="Test.VerifyCruises"/>
-      <class name="Test.VerifyBrockenLinks"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="Test">
+		<classes>
+			<class name="Test.VerifyRegistration" />
+			<class name="Test.VerifySingin" />
+			<class name="Test.VerifyFlightBooking" />
+			<class name="Test.VerifyCruises" />
+			<class name="Test.VerifyBrockenLinks" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

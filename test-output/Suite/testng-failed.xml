@@ -3,6 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Test.VerifyRegistration">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="TestRegistration"/>
+        </methods>
+      </class> <!-- Test.VerifyRegistration -->
+      <class name="Test.VerifyBrockenLinks">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="TestBrockenLinks"/>
+        </methods>
+      </class> <!-- Test.VerifyBrockenLinks -->
       <class name="Test.VerifyFlightBooking">
         <methods>
           <include name="TestFlightBooking"/>
@@ -10,6 +24,20 @@
           <include name="close"/>
         </methods>
       </class> <!-- Test.VerifyFlightBooking -->
+      <class name="Test.VerifySingin">
+        <methods>
+          <include name="testSingin"/>
+          <include name="launch"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Test.VerifySingin -->
+      <class name="Test.VerifyCruises">
+        <methods>
+          <include name="close"/>
+          <include name="launch"/>
+          <include name="TestCruises"/>
+        </methods>
+      </class> <!-- Test.VerifyCruises -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

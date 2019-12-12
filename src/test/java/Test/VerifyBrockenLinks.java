@@ -1,24 +1,18 @@
 package Test;
 
 import org.testng.annotations.Test;
-import java.awt.List;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 public class VerifyBrockenLinks {
   ChromeDriver driver;
@@ -27,10 +21,10 @@ public class VerifyBrockenLinks {
   public void launch(){
 	  	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--no-sandbox"); //Bypass OS security model   
-		//options.addArguments("--start-maximized");
-		//options.addArguments("--disable-dev-shm-usage");
-		//options.addArguments("--headless");
+		options.addArguments("--no-sandbox"); //Bypass OS security model   
+		options.addArguments("--start-maximized");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 		driver.get("http://www.newtours.demoaut.com/");
 		driver.manage().window().maximize();
